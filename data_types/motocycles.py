@@ -8,3 +8,7 @@ print(motocycles)
 # Appending elements to the end of list
 motocycles.append('honda')
 print(motocycles)
+
+# Inserting elements into a list
+motocycles.insert(0, 'sym')
+print(motocycles)
