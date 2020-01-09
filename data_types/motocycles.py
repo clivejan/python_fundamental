@@ -16,3 +16,8 @@ print(motocycles)
 # Removing an item from list by its index
 del motocycles[0]
 print(motocycles)
+
+# Removing an item from the end of a list and reusing the value
+popped_motocycle = motocycles.pop()
+print(motocycles)
+print(popped_motocycle)
