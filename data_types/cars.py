@@ -22,3 +22,7 @@ print(sorted(cars, reverse=True))
 
 print("\nHere is the original list again:")
 print(cars)
+
+# reverse the list items permanently
+cars.reverse()
+print(cars)
