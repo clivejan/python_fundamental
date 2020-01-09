@@ -1,0 +1,15 @@
+cities = ['Vancouver', 'Toronto', 'Ottawa', 'Quebec City', 'Montreal']
+
+print(f"{'Original'.ljust(20)}{cities}")
+print(f"{'Sorted'.ljust(20)}{sorted(cities)}")
+print(f"{'Original'.ljust(20)}{cities}")
+print(f"{'Reverd Sorted'.ljust(20)}{sorted(cities, reverse=True)}")
+print(f"{'Original'.ljust(20)}{cities}")
+cities.reverse()
+print(f"{'Reverse'.ljust(20)}{cities}")
+cities.reverse()
+print(f"{'Reverse again'.ljust(20)}{cities}")
+cities.sort()
+print(f"{'Sort'.ljust(20)}{cities}")
+cities.sort(reverse=True)
+print(f"{'Reverd Sort'.ljust(20)}{cities}")
