@@ -12,3 +12,7 @@ print(motocycles)
 # Inserting elements into a list
 motocycles.insert(0, 'sym')
 print(motocycles)
+
+# Removing an item from list by its index
+del motocycles[0]
+print(motocycles)
