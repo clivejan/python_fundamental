@@ -26,3 +26,6 @@ print(cars)
 # reverse the list items permanently
 cars.reverse()
 print(cars)
+
+# finding the length of a list
+print(len(cars))
