@@ -25,3 +25,8 @@ print(popped_motocycle)
 # Removing an item from any position in a list and reusing the value
 first_owned = motocycles.pop(0)
 print(f"The first motocycle I owned was a {first_owned}.")
+
+# Removing an item by value
+print(motocycles)
+motocycles.remove('yamaha')
+print(motocycles)
