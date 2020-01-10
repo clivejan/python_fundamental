@@ -25,3 +25,8 @@ for name in favourite_languages.keys():
 # using dictionary.keys() as a normal list
 if 'erin' not in favourite_languages.keys():
 	print(f"\nErin, please take our poll!")
+
+# looping through a dictionary's keys in a particular order
+for name in sorted(favourite_languages.keys()):
+	print(f"{name.title()}, thank you gor taking the poll.")
+print()
