@@ -21,3 +21,7 @@ for name in favourite_languages.keys():
 	if name in friends:
 		language = favourite_languages[name].title()
 		print(f"\t{name.title()}, I see you love {language}.")
+
+# using dictionary.keys() as a normal list
+if 'erin' not in favourite_languages.keys():
+	print(f"\nErin, please take our poll!")
