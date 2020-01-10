@@ -32,6 +32,7 @@ for name in sorted(favourite_languages.keys()):
 print()
 
 # looging through all values in a dictionary
+# usgin set to make a list in which each item will be unique
 print("The fllowing languages have been mentioned:")
-for language in favourite_languages.values():
+for language in set(favourite_languages.values()):
 	print(language.title())
