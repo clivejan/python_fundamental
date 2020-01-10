@@ -10,3 +10,9 @@ print(dimensions[1])
 # looping throught all values in a tuple
 for dimension in dimensions:
 	print(dimension)
+
+# writing over a tuple
+dimensions = (400, 100)
+print("\nModified dimensions:")
+for dimension in dimensions:
+	print(dimension)
