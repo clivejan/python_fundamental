@@ -11,3 +11,8 @@ print(f"Original:\t{alien_0}")
 alien_0['x_position'] = 0
 alien_0['y_position'] = 25
 print(f"Added:\t\t{alien_0}")
+
+# modifying values in a dictionary
+print(f"\nThe alien is {alien_0['color']}")
+alien_0['color'] = 'yellow'
+print(f"The alien is now {alien_0['color']}")
