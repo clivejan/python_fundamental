@@ -8,3 +8,6 @@ describe_pet('galaxy', 'Solar system')
 
 # order matters in positional arguments
 describe_pet('Earth', 'planet')
+
+# usgin keyword arguments
+describe_pet(animal_type='planet', pet_name='Earth')
