@@ -5,3 +5,6 @@ def describe_pet(animal_type, pet_name):
 
 describe_pet('planet', 'Earth')
 describe_pet('galaxy', 'Solar system')
+
+# order matters in positional arguments
+describe_pet('Earth', 'planet')
