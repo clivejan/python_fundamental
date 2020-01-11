@@ -11,7 +11,13 @@
 #make_pizza(12, 'sock', 'booger', 'rock')
 
 # using as to give a function an alias
-from pizza import make_pizza as mp
+#from pizza import make_pizza as mp
 
-mp(16, 'sock')
-mp(12, 'sock', 'booger', 'rock')
+#mp(16, 'sock')
+#mp(12, 'sock', 'booger', 'rock')
+
+# using as to give a module an alias
+import pizza as p
+
+p.make_pizza(16, 'sock')
+p.make_pizza(12, 'sock', 'booger', 'rock')
