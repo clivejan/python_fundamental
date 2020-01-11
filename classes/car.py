@@ -18,10 +18,25 @@ class Car:
 		"""print a statement showing the car's mileage"""
 		print(f"This car has {self.odometer_reading} miles on it.")
 
+	def update_odometer(self, mileage):
+		"""
+		set the odometer reading to the given value
+		reject the change if it attempt to roll the odometer back
+		"""
+		if mileage >= self.odometer_reading:
+			self.odometer_reading = mileage
+		else:
+			print("You cannot roll back an odometer!")
+
 my_dream_car = Car('audi', 'q5', 2019)
 print(my_dream_car.get_descriptive_name())
 my_dream_car.read_odometer()
 
 # modifying an attribute's value directly
 my_dream_car.odometer_reading = 23
+my_dream_car.read_odometer()
+
+# modifying an attribute's value through a method
+my_dream_car.update_odometer(20)
+my_dream_car.update_odometer(46)
 my_dream_car.read_odometer()
