@@ -11,3 +11,6 @@ describe_pet('Earth', 'planet')
 
 # usgin keyword arguments
 describe_pet(animal_type='planet', pet_name='Earth')
+
+# the order of keyword arguments does not matter
+describe_pet(pet_name='Earth', animal_type='planet')
