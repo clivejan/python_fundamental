@@ -32,6 +32,18 @@ class Car:
 		"""add the giev amount to the odometer reading"""
 		self.odometer_reading += miles
 
+class Battery:
+	"""a simple attempt to model a battery for an electric car"""
+
+	def __init__(self, battery_size=75):
+		"""Initialize the battery's attributes"""
+		self.battery_size = battery_size
+
+	def describe_battery(self):
+		"""print a statement describing the battery size"""
+		print(f"This car has a {self.battery_size}-kWh battery.")
+
+
 class ElectricCar(Car):
 	"""represent aspects of a car, specific to eletirc vehicles"""
 
@@ -39,12 +51,8 @@ class ElectricCar(Car):
 		"""Initialize attributes of the parent class"""
 		super().__init__(make, model, year)
 		"""These initialize attributes specific to an electric car"""
-		self.battery_size = 75
-
-	def describe_battery(self):
-		"""print a statement describing the battery size"""
-		print(f"This car has a {self.battery_size}-kWh battery.")
+		self.battery = Battery()
 
 my_tesla = ElectricCar('tesla', 'model s', 2009)
 print(my_tesla.get_descriptive_name())
-my_tesla.describe_battery()
+my_tesla.battery.describe_battery()
