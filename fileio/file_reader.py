@@ -1,5 +1,7 @@
+filename = 'pi_digits.txt'
+
 # using with as for letting python closes file autimatically
-with open('pi_digits.txt') as file_object:
+with open(filename) as file_object:
 
 # reading an entire fil
 #	contents = file_object.read()
