@@ -10,3 +10,11 @@ for line in lines:
 #print(pi_string)
 print(pi_string[:52])
 print(len(pi_string))
+
+# is your birthday containd in pi?
+birthday = input("Enter your birthday, in the form mmddyy: ")
+if birthday in pi_string:
+	print(f"Your birthday appears in the first million digits of pi!")
+else:
+	print(f"Your birthday does not "
+		"appears in the first million digits of pi!")
