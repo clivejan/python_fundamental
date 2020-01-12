@@ -2,6 +2,10 @@
 with open('pi_digits.txt') as file_object:
 
 # reading an entire fil
-	contents = file_object.read()
+#	contents = file_object.read()
 # removing trail newline added by read()
-print(contents.rstrip())
+#print(contents.rstrip())
+
+# reading file line by line
+	for line in file_object:
+		print(line.rstrip())
